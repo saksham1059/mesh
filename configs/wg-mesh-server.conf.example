@@ -1,0 +1,5 @@
+[Interface]
+Address = 100.80.0.1/16
+ListenPort = 51820
+PrivateKey = REPLACE_WITH_CONTENTS_OF_/etc/mesh/server.key
+SaveConfig = false

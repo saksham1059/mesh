@@ -1,0 +1,19 @@
+[Unit]
+Description=mesh node agent heartbeat
+After=network-online.target wg-quick@wg-mesh.service
+Wants=network-online.target wg-quick@wg-mesh.service
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/local/bin/mesh-agent run
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/etc/mesh
+
+[Install]
+WantedBy=multi-user.target

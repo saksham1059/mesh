@@ -1,0 +1,12 @@
+{
+  "listen_addr": "127.0.0.1:8080",
+  "public_endpoint": "mesh.sakshamchugh.com:51820",
+  "wireguard_interface": "wg-mesh",
+  "wireguard_server_public_key": "REPLACE_WITH_SERVER_PUBLIC_KEY",
+  "wireguard_server_private_key_file": "/etc/mesh/server.key",
+  "enrollment_token": "REPLACE_WITH_LONG_RANDOM_ENROLLMENT_TOKEN",
+  "admin_token": "REPLACE_WITH_DIFFERENT_LONG_RANDOM_ADMIN_TOKEN",
+  "state_file": "/var/lib/mesh/state.json",
+  "mesh_cidr": "100.80.0.0/16",
+  "server_address": "100.80.0.1/16"
+}
